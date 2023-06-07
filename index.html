@@ -20,33 +20,86 @@
 
             li {
                 font-size: 1.5em;
-                font-family: 'Cinzel', serif;
+               
                 
             }
 
             body {
 
-                background-color: #ECF0F1 ;
+                background: rgb(123,118,196);
+background: linear-gradient(90deg, rgba(123,118,196,1) 0%, rgba(20,91,117,1) 37%, rgba(11,63,74,1) 94%);
             }
+
+            .header {
+                border-radius: 20px;
+            }
+
+            .recipe-cards {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+
+            .card-text {
+                font-size: 0.7em;
+                color: gray
+            }
+
+            .card-title {
+                font-size: 1em;
+                font-family: 'Shadows Into Light', cursive;
+                
+            }
+
+            .btn {
+                background-color: rgb(203, 248, 203);
+                color: black;
+                border: 0px
+            }
+
+            .card {
+                -webkit-box-shadow: 0px 2px 13px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 13px -7px rgba(0,0,0,0.75);
+box-shadow: 0px 2px 13px -7px rgba(0,0,0,0.75);
+            }
+
         </style>
     </head>
 
     <body class = "container">
 
-        <h1 style = "font-family: 'Shadows Into Light', cursive; font-size: 3em" class = "py-5 text-center"> Odin Recipes (Inspired by One Piece's Sanji)</h1>
-<div class = "row" style = "margin-top: 15vh">
-    <div class = "col-md-7">
-        <img src = "header.mp4" style = "width:40vw" class = "img-fluid" />
-    </div>
-    <div class = "col-md-5">
-        <ul>
-            <li class = "py-3"><a href = "recipes/gins_takeout.html" > Gin's Takeout Stirfry</a></li>
-            <li class = "py-3"><a href = "recipes/meat_on_the_bone.html" >Luffy's Favourite Meat On The Bone</a></li>
-            <li class = "py-3"><a href = "recipes/onigiri.html" >Onigiri</a></li>
-            </ul>
-    </div>
-</div>
+        <h1 style = "font-family: 'Cinzel', serif; color: white;" class = "py-5 text-center"> Odin Recipes (Inspired by One Piece's Sanji)</h1>
+
+        <div class = "text-center">
+            <img src = "header.mp4" class = "img-fluid header" >
+        </div>
         
-        
+        <div class = "container py-5 text-center recipe-cards">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="recipes/gin's_takeout.png" alt="gin's takeout stirfry" class = "img-fluid" style = "height: 15vh">
+            <div class="card-body">
+              <h5 class="card-title">Gin's Takeout Stirfry</h5>
+              <a href="recipes/gins_takeout.html" class="btn btn-primary">Recipe</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="recipes/onigiri.jpeg" alt="Onigiri" class = "img-fluid" style = "height: 15vh">
+            <div class="card-body">
+              <h5 class="card-title">Onigiri</h5>
+              <a href="recipes/onigiri.html" class="btn btn-primary">Recipe</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="recipes/meat_bone.webp" alt="meat on the bone" class = "img-fluid" style = "height: 15vh">
+            <div class="card-body">
+              <h5 class="card-title">Meat On The Bone</h5>
+              <a href="recipes/meat_on_the_bone.html" class="btn btn-primary">Recipe</a>
+            </div>
+          </div>
+
+          
+        </div>
     </body>
 </html>
